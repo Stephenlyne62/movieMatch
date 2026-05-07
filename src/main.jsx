@@ -8,7 +8,7 @@ import "./assets/styles/global.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+      <BrowserRouter basename="/movieMatch">
       <WatchlistProvider>
         <App />
       </WatchlistProvider>
