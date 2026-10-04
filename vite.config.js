@@ -4,4 +4,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/movieMatch/',
+
+  test: {
+  environment: 'jsdom',
+  setupFiles: './src/setUpTests.js',
+  exclude: [
+    '**/node_modules/**',
+    '**/e2e/**',
+  ],
+},
 })
