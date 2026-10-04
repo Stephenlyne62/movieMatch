@@ -30,4 +30,4 @@ jobs:
       - name: Run Playwright tests
         run: npm run test:e2e
         env:
-        VITE_TMDB_API_KEY: ${{ secrets.VITE_TMDB_API_KEY }}
+          VITE_TMDB_API_KEY: ${{ secrets.VITE_TMDB_API_KEY }}
